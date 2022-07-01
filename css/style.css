@@ -1,0 +1,1197 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Roboto:wght@300&display=swap');
+
+*{
+	font-family: 'Lato', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	background-color: rgba(0, 0, 0, 1.0);
+	background-attachment: fixed;
+}
+/* ================ GRID (Mobile frist) ======= */
+.contenedor{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav" 
+	"header" 
+	"main" 
+	"aside"
+	"footer";
+}
+#nav{
+	grid-area: nav;
+}
+#header{
+	grid-area: header;
+}
+#main{
+	grid-area: main;
+}
+#aside{
+	grid-area: aside;
+}
+#footer{
+	grid-area: footer;
+}
+/* ================ nav ===============*/
+	.botonera{
+		background-color: whitesmoke;
+		position: sticky;
+		top: 0;
+		left: 0;
+		padding: 10px 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.botonera img{
+			width: 10vw;
+			margin-bottom: 30px;
+		}
+
+		.botonera ul{
+			/****display flex****/
+			display: flex;
+		}
+
+		.botonera ul li{
+			list-style: none;
+			margin-right: 20px;
+		}
+
+			.botonera ul li a{
+				font-size: 1.8rem;
+				text-decoration: none;
+				color: #5B5959;
+			}
+
+			/*hover*/
+			.botonera ol li a:hover{
+				color: black;
+				font-weight: 600;
+			}
+	/* ================ Header ===============*/
+	.encabezado{
+		color: white;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+		.tituloImg{
+			width: 100vw;
+			
+		}
+		.divHeader{
+		color: whitesmoke;
+		text-align: center;
+		margin: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	 	 }
+		  	.txtTitulo{
+		  		position: absolute;
+				color: whitesmoke;
+				font-size: 10rem;
+				text-align: center;
+				margin-bottom: 400px;
+					}
+		   	 	.txtOferta{
+		    		position: absolute;
+					color: rgba(255, 213, 0, 0.8) ;
+					font-size: 4rem;
+					margin-bottom: 200px;		
+		   		 	}
+		    		.txtParrafo{
+						position: absolute;
+						color: rgba(255, 213, 0, 0.8);
+						font-size: 2rem;
+						margin-bottom: 50px;
+							}
+						.txtSub{
+							position: absolute;
+							color: rgba(255, 213, 0, 0.8);
+							font-size: 4rem;
+							margin-top: 150px;
+							}
+	/* ================ Main ===============*/
+	.estilosMain{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.articleRopa{
+		display: flex;
+		justify-content: center;
+	}
+	.txtRopa{
+		position: absolute;
+		color: black;
+		font-size: 10rem;
+		text-align: center;
+		margin-top: 40px;
+	}
+	/* ================ Aside ===============*/
+	.asideText{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		background-color: white;
+		margin-top: 50px;
+		border-color: grey;
+		border-width: 5px ;
+		border-style: dotted ;
+	}
+	.articleEnvio{
+		border-bottom-color: black;
+		border-bottom-style: solid;
+		border-bottom-width: 1rem;
+		text-align: center;
+	}
+	.asideImg{
+		width: 10vw;
+		height: auto;
+	}
+	.asideText article{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.asideText h3{
+				font-size: 3rem;
+				align-items: center;
+				font-weight: bold;
+				margin: 20px;
+				}
+				.asideText p{
+					color: grey;
+					font-size: 2rem;
+					align-items: center;
+					font-weight: bold;
+					margin-bottom: 10px;
+					}
+	/* ================= Footer ==============*/
+	.pie{
+		background-color:whitesmoke ;
+		color: black;
+		padding:30px;
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.pie a{
+			text-decoration: none;
+		}
+		.pieIcon{
+				width: 10vw;
+			}
+			.pieTitulo{
+					margin-bottom: 5px;
+					font-size: 3rem;
+				}
+}
+/* ============== ENDS MOBILE FIRST ================== */
+/* ======================= medi queries INDEX ======================= */
+@media (min-width: 600px){ 
+
+	}
+
+/* ======================= media queries INDEX =======================*/ 
+@media (min-width: 1024px){
+	.contenedor{
+	display: grid;
+	grid-template-columns: 90vw 10vw;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav nav" 
+	"header header" 
+	"main aside" 
+	"footer footer";
+}
+/* ================ Nav ===============*/
+	.botonera{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.botonera ul li{
+				list-style: none;
+				margin-right:20px;		
+				}
+					.botonera	ul li a{
+						font-size: 1.8rem;
+						text-decoration: none;
+						color: black;
+						}
+							/*hover*/
+							.botonera ul li a:hover{
+								color: grey;
+								font-weight: 600;
+								}
+								.botonera a img{
+									margin-bottom: 5px;
+									width: 35%;
+								}
+	/* ================ Header ===============*/
+	.encabezado{
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.tituloImg{
+			width: 100%;
+			height: 100%;	
+	}
+	.divHeader{
+		
+		color: whitesmoke;
+		font-size: 10vh;
+		text-align: center;
+		margin: 40px;
+	}
+	.txtTitulo{
+		position: absolute;
+		color: whitesmoke;
+		font-size: 10vh;
+		text-align: center;
+		margin-bottom: 25%;
+	}
+		.txtOferta{
+		position: absolute;
+		color: rgba(255, 213, 0, 0.8) ;
+		font-size: 4vh;
+		margin-bottom: 15%;
+		}
+			.txtParrafo{
+				position: absolute;
+				color: rgba(255, 213, 0, 0.8);
+				font-size: 2vh;
+				margin-bottom: 12%;
+			}
+				.txtSub{
+					position: absolute;
+					color: rgba(255, 213, 0, 0.8);
+					font-size: 4vh;
+						}
+	/* ================ Main ===============*/
+	.estilosMain{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.articleRopa{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.imgHombre{
+		width: 410px;
+	}
+	.imgMujer{
+		width: 390px;
+	}
+	.imgOutlet{
+		width: 440px;
+	}
+	.txtRopa{
+		position: absolute;
+		color: black;
+		font-size: 50px;
+		text-align: center;
+	  }
+	 /* ================ Aside ===============*/
+	.asideText{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		background-color: white;
+		border-color: grey;
+		border-width: 5px ;
+		border-style: dotted ;
+	}
+	.asideImg{
+		width: 70px;
+		height: auto;
+	}
+		.asideText article{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+			.asideText h3{
+				font-size: 15px;
+				align-items: center;
+				font-weight: bold;
+				}
+				.asideText p{
+					font-size: 10px;
+					align-items: center;
+					}
+	/* ================= Footer ==============*/
+	.pie{
+		background-color: white ;
+		color: black;
+		padding:10px;
+		margin-top: 50px;
+		
+	}
+			.pieIcon{
+				width: 40px;
+			}
+				.pieTitulo{
+					margin-bottom: 5px;
+					font-size: 2rem;
+				}
+} 
+/* ======================= medi queries INDEX ======================= */
+@media (min-width: 768px) and (max-width: 1023px){ 
+
+	.asideText{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.tituloImg{
+		width: 100vw;
+	}
+	.articleRopa{
+		margin-top: 30px;
+	}
+
+}
+/* ))))))))))))))))))))))) CATEGORIA ))))))))))))))))))*/
+
+/* ================ GRID (Mobile frist) ======= */
+.gridCategoria{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, auto);
+	grid-template-areas: 
+	"navc" 
+	"headerc" 
+	"mainc" 
+	"articlec"
+	"asidec"
+	"footerc";
+}
+#navc{
+	grid-area: navc;
+}
+#headerc{
+	grid-area: headerc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#mainc{
+	grid-area: mainc;
+}
+#articlec{
+	grid-area: articlec;
+}
+#asidec{
+	grid-area: asidec;
+}
+#footerc{
+	grid-area: footerc;
+}
+}
+.encabezadoC{
+	display: flex;
+	background-color: yellow;
+	color: white;
+	font-size: 5px;
+	text-align: center;
+}
+/*=========== Header ==============*/
+.baseCate{
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+ .baseCates{
+	position: absolute;
+	color: whitesmoke;
+	font-size: 10rem;
+	text-align: center;
+	
+ }
+ 
+ /*=========== main ==============*/
+.mainCate{
+	height: auto;
+	color: black;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+	.mainCate h2{
+		color: black;
+		font-size: 3vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.mainCate ul{
+		padding: 10px 10px;
+	}
+	.mainCate ul li {
+		font-size: 2vh;
+		list-style: none;
+		text-decoration: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	/*=========== Article ==============*/
+.nuevoTxt{
+	font-size: 4vh;
+	font-style: italic;
+	margin-top: 20px ;
+	margin-bottom: 20px;
+	text-align: center;
+	text-decoration: underline;
+	background-color: grey;
+	color: white;
+	
+}
+.divUno{
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+	.divUno img{
+ 		width: 80vw;
+ 		margin: 20px 20px;
+	}
+
+}
+
+	.divUno figcaption{
+		font-size: 3vh;
+		font-weight: bolder;
+		color: white;
+		text-align: center;
+		border-bottom-color: white;
+		border-bottom-width: 5px;
+		border-bottom-style: solid;
+	}
+	/*=========== Aside ==============*/
+	.nuevoTxte{
+	font-size: 4vh;
+	font-style: italic;
+	margin-top: 20px ;
+	margin-bottom: 20px;
+	text-align: center;
+	text-decoration: underline;
+	background-color: grey;
+	color: white;
+	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(116,116,113,1) 49%, rgba(250,250,250,1) 97%);
+}
+	.nuevoTxte p{
+		font-size: 30px;
+	}
+.saleRopa{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+ .saleImg{
+ 	width: 50vw;
+ }
+  .saleRopa figcaption{
+  		font-size: 3vh;
+		font-weight: bolder;
+		color: white;
+		text-align: center;
+		
+  }
+  		.saleRopa p{
+  		font-size: 35px;
+		color: white;
+		text-align: center;
+		border-bottom-color: white;
+		border-bottom-width: 5px;
+		border-bottom-style: solid;
+		margin-bottom: 20px;
+ 	 }
+.saleParrafo{
+	text-decoration: line-through;
+}
+}
+/* ============ ENDS MOBILE FIRST ============= */
+/* =========== media queries INDEX ============== */
+@media (min-width: 768px){
+	.gridCategoria{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"navc navc" 
+	"headerc headerc" 
+	"mainc mainc" 
+	"articlec asidec"
+	"footerc footerc";
+}
+}
+/* =========== media queries INDEX ============== */
+@media (min-width: 1024px){
+	.gridCategoria{
+	display: grid;
+	grid-template-columns: 15vw 65vw 20vw;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: 
+	"navc navc navc" 
+	"headerc headerc headerc" 
+	"mainc articlec asidec" 
+	"footerc footerc footerc";
+}
+/*=========== main ==============*/
+.mainCate{
+	width: 15vw;
+	height: auto;
+	margin-top: 22px;
+	color: black;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+	.mainCate h2{
+		color: black;
+		font-size: 3vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.mainCate ul li {
+		font-size: 2vh;
+		list-style: none;
+		text-decoration: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+/*=========== Article ==============*/
+.nuevoTxt{
+	font-size: 4vh;
+	font-style: italic;
+	margin-top: 20px ;
+	margin-bottom: 20px;
+	padding-top: 22px;
+	padding-bottom: 21px;
+	text-align: center;
+	text-decoration: underline;
+	background-color: grey;
+	color: white;
+	border-bottom-color: white;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+}
+.nuevoTxte{
+	font-size: 4vh;
+	font-style: italic;
+	margin-top: 20px ;
+	margin-bottom: 20px;
+	padding-bottom: 1px;
+	text-align: center;
+	text-decoration: underline;
+	background-color: grey;
+	color: white;
+	border-bottom-color: white;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+}
+.divUno{
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+}
+	.divUno img{
+ 		width: 25vw;
+ 		margin-top: 10vw;
+ 
+	}
+	.divUno figcaption{
+		font-size: 3vh;
+		font-weight: bolder;
+		color: white;
+		text-align: center;
+		border-bottom-color: white;
+		border-bottom-width: 5px;
+		border-bottom-style: solid;
+	}
+/*=========== Aside ==============*/
+	.saleRopa{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 20px;
+	border-left-color: white;
+	border-left-width: 5px;
+	border-left-style: solid;
+
+}
+ .saleRopa img{
+ 	width: 20vw;
+ }
+  .saleRopa figcaption{
+  		font-size: 3vh;
+		font-weight: bolder;
+		color: white;
+		text-align: center;
+		
+  }
+  		.saleRopa p{
+  		font-size: 35px;
+		color: white;
+		text-align: center;
+		border-bottom-color: white;
+		border-bottom-width: 5px;
+		border-bottom-style: solid;
+		margin-bottom: 20px;
+ 	 }
+.saleParrafo{
+	text-decoration: line-through;
+}
+}
+/* ))))))))))))))))))))))) Quienes Somos ))))))))))))))))))*/
+.gridQuienes{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"navq" 
+	"headerq" 
+	"mainq" 
+	"sectionq"	
+	"footerq";
+}
+#navq{
+	grid-area: navq;
+}
+#headerq{
+	grid-area: headerq;
+}
+#mainq{
+	grid-area: mainq;
+}
+#sectionq{
+	grid-area: sectionq;
+}
+#footerq{
+	grid-area: footerq;
+}
+
+/*=========== Header ==============*/
+ .txtQuien{
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+ .txtQuienes{
+	position: absolute;
+	color: whitesmoke;
+	font-size: 10rem;
+	text-align: center;
+	
+ }
+.quienesImg{
+			width: 100vw;
+		}
+
+/*=========== Main ==============*/
+.txtMain{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+	.txtMain div{
+		border-bottom-color: grey;
+		border-bottom-style: solid;
+		border-bottom-width: 10px;
+		margin-bottom: 20px;
+	}
+	.txtMain h3{
+	color: white;
+	font-size: 2rem;
+	margin: 20px 20px;
+	font-family: Roboto, sans-serif;
+	}
+	.txtMain img{
+		width: 80vw;
+		height: auto;
+	}
+	.txtMain p{
+		color: white;
+		font-size: 1rem;
+		font-family: Roboto, sans-serif;
+		line-height: 1.4;
+		margin-bottom: 20px;
+	}
+/*=========== section ==============*/
+.cuadroTxt{
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 3rem;
+}
+ .cuadroTxt fieldset{
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	border-color: whitesmoke;
+	border-style: solid;
+	border-width: 5px;
+ }
+ .cuadroBottom {
+ 	width: 15vw;
+ }
+}
+/* ============ ENDS MOBILE FIRST ============= */
+/* =========== media queries INDEX ============== */
+@media (min-width: 768px) and (max-width: 1023px){
+	.gridQuienes{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"navq" 
+	"headerq" 
+	"sectionq"
+	"mainq" 
+	"footerq";
+	}
+
+}
+/* =========== media queries INDEX ============== */
+@media (min-width: 1024px){ 
+	.gridQuienes{
+	display: grid;
+	grid-template-columns: 30vw 70vw;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: 
+	"navq navq" 
+	"headerq headerq" 
+	"sectionq mainq" 
+	"footerq footerq";
+	}
+/* =========== main ============== */
+	.txtMain{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border-left-color: grey;
+	border-left-style: solid;
+	border-left-width: 10px;
+	}
+	.txtMain img{
+		width: 20vw;
+		height: auto;
+	}
+	.txtMain span{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		padding-left: 30px;
+	}
+		.txtMain p{
+		color: white;
+		font-size: 2rem;
+		font-family: Roboto, sans-serif;
+		line-height: 1.4;
+		margin: 70px 70px;
+	}
+/* =========== section ============== */
+
+	.cuadroTxt{
+	color: white;
+	font-size: 2rem;
+	text-align: center;
+	line-height: 10rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+ .cuadroTxt fieldset{
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	border-color: whitesmoke;
+	border-style: solid;
+	border-width: 5px;
+	height: 100vh;
+ }
+ .cuadroBottom {
+ 	margin-top: 40px;
+ 	width: 15vw;
+ }
+}
+
+/* ))))))))))))))))))))))) TonedClub ))))))))))))))))))*/
+.gridClub{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"navt" 
+	"headert" 
+	"maint" 
+	"asidet"	
+	"footert";
+}
+#navt{
+	grid-area: navt;
+}
+#headert{
+	grid-area: headert;
+}
+#maint{
+	grid-area: maint;
+}
+#asidet{
+	grid-area: asidet;
+}
+#footert{
+	grid-area: footert;
+}
+/*=========== Header ==============*/
+ .txtClub{
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+ .txtClub h1{
+	position: absolute;
+	color: whitesmoke;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 150px;
+ }
+ .txtClub h4{
+	position: absolute;
+	color: whitesmoke;
+	font-size: 30px;
+	margin-top: 20px;
+	text-align: center;
+ }
+ .txtClub p{
+	position: absolute;
+	color: whitesmoke;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 150px ;
+ }
+ .clubImg{
+ 	width: 100vw;
+ }
+
+ .mainClub{
+ 	color: white;
+ 	line-height: 5rem;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	font-size: 2rem;
+ 	
+ }
+ .mainClub img{
+ 	width: 50vw;
+ }
+ .asideClub{
+ 	color: white;
+ 	text-decoration: none;
+ 	list-style: none;
+ 	text-align: center;
+ 	display: flex;
+ 	flex-direction: column;
+ 	font-size: 13px;
+ 	margin-left: 15px;
+ 	margin-top: 30px;
+ 	border-color: grey;
+ 	border-width: 10px;
+ 	border-style: solid;
+ }
+  .asideClub ol{
+  	text-decoration: none;
+ 	list-style: none;
+  }
+/* ============ ENDS MOBILE FIRST ============= */
+/* =========== media queries INDEX ============== */
+@media (min-width: 1024px){ 
+	.gridClub{
+	display: grid;
+	grid-template-columns: 35vw 65vw;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: 
+	"navt navt" 
+	"headert headert" 
+	"asidet maint"
+	"footert footert";
+	}
+
+	.mainClub{
+ 	color: white;
+ 	line-height: 5rem;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ 	font-size: 2rem;
+
+ }
+  .mainClub img{
+ 	width: 20vw;
+ }
+  .asideClub{
+ 	color: white;
+ 	line-height: 7rem;
+ 	text-align: center;
+ 	display: flex;
+ 	flex-direction: column;
+ 	font-size: 13px;
+ 	margin-left: 15px;
+ 	margin-top: 30px;
+ 	border-color: grey;
+ 	border-width: 10px;
+ 	border-style: solid;
+ }
+	
+}
+/* =========== media queries INDEX ============== */
+@media (min-width: 768px) and (max-width: 1023px){
+	.gridClub{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"navt" 
+	"headert" 
+	"maint"
+	"asidet"
+	"footert";
+	}
+
+}
+}
+/* ))))))))))))))))))))))) Contacto ))))))))))))))))))*/
+.gridContacto{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"navm" 
+	"headerm" 
+	"mainm" 
+	"asidet"	
+	"footert";
+}
+#navm{
+	grid-area: navm;
+}
+#headerm{
+	grid-area: headerm;
+}
+#mainm{
+	grid-area: mainm;
+}
+#asidem{
+	grid-area: asidem;
+}
+#footerm{
+	grid-area: footerm;
+}
+
+.txtCont{
+	color: white;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+ .txtCont h1{
+	position: absolute;
+	color: whitesmoke;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 150px;
+ }
+ .contactoImg{
+ 	width: 100vw;
+ }
+  .mainCont{
+ 	color: white;
+ 	text-decoration: none;
+ 	list-style: none;
+ 	text-align: center;
+ 	font-size: 13px; 
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;	
+ }
+ .mainCont fieldset{
+ 	width: 50vw;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+  .mainBottom {
+ 	margin-top: 10px;
+ 	width: 15vw;
+ }
+ .asideCont{
+ 	text-align: center;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: space-evenly;
+ 	align-items: center;
+ 	margin: 10px 10px;
+ 	background-color: grey;
+ 	color: black;
+ }
+	  .asideCont h3,h4 {
+	  	text-align: center;
+	  	font-size: 2rem;
+	  	margin-bottom: 10px;
+	  }
+		  .asideCont li {
+		  	width: 80vw;
+		  	line-height: 1.8rem;
+		  	 text-align: left;
+		  }
+		   .asideCont span{
+		    font-weight: bolder;
+		    font-size: 12px ;
+		    text-align: left;
+		  }
+		  	.asideCont iframe{
+		  		margin-top: 20px;
+		  	}
+}
+/* =========== media queries INDEX ============== */
+@media (min-width: 768px) and (max-width: 1023px){
+	.gridContacto{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: 
+	"navm" 
+	"headerm" 
+	"sectionm"
+	"mainm" 
+	"footerm";
+	}
+	 .asideCont{
+ 	display: flex;
+ 	flex-direction: c;
+ 	justify-content: space-evenly;
+ 	align-items: center;
+ 	margin: 30px 30px;
+ 	background-color: grey;
+ 	color: black;
+ }
+}
+/* =========== media queries INDEX ============== */
+@media (min-width: 1024px){ 
+.gridContacto{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas: 
+	"navm navm" 
+	"headerm headerm" 
+	"asidem mainm" 	
+	"footerm footerm";
+} 
+.mainCont fieldset{
+ 	width: 40vw;
+ 	display: flex;
+ 	flex-direction: column;
+ 	justify-content: center;
+ 	align-items: center;
+ }
+ .asideCont li {
+ 			width: 50vw;
+ 			font-size: 15px ;
+		  	line-height: 3rem;
+		  }
+		   .asideCont span{
+		    font-weight: bolder;
+		    font-size: 20px;
+		   
+		  }
+		  .asideCont h4{
+		  	margin-top: 10px;
+		  }
+		  .asideCont iframe{
+		  	margin-bottom: 10px;
+		  }
+}
+
+/* ===================== ANIMACIONES =================*/
+

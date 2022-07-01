@@ -486,7 +486,8 @@ body{
 	text-decoration: underline;
 	background-color: grey;
 	color: white;
-	
+	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(116,116,113,1) 49%, rgba(250,250,250,1) 97%);
 }
 .divUno{
 	background-color: black;
@@ -500,9 +501,11 @@ body{
  		width: 80vw;
  		margin: 20px 20px;
 	}
-
+.transform:hover{
+	transform: translate(10px, -20px);
+	cursor: pointer;
+	transition: transform 1s;
 }
-
 	.divUno figcaption{
 		font-size: 3vh;
 		font-weight: bolder;
@@ -1191,6 +1194,10 @@ body{
 		  .asideCont iframe{
 		  	margin-bottom: 10px;
 		  }
+
+.mapaM:hover{
+	transform: scale(1.2);
+}
 }
 
 /* ===================== ANIMACIONES =================*/
